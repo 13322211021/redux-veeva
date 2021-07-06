@@ -1,0 +1,24 @@
+.hcp-component {
+    padding: 120px 0 0 24px;
+
+    .ace-name {
+        background-color: #CDCDCD;
+        border-radius: 4px;
+        color: white;
+        display: inline-block;
+        font-size: 0.8em;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 8px;
+        text-align: center;
+    }
+
+    .doctor-name {
+        color: #2F7CF6;
+        margin: 7px 0 5px 0;
+    }
+
+    .hospital-name {
+        font-size: 0.9em;
+    }
+}
