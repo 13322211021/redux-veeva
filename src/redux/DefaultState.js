@@ -1,4 +1,4 @@
-import ALL_DATA from './../mock/ALL_DATA';
+import ALL_DATA from "./../mock/ALL_DATA";
 
 const defaultState = {
   topSettings: {
@@ -7,9 +7,9 @@ const defaultState = {
     isMonth: false
   },
   bodySettings: {
-    acePrior: 'asc',
-    curSchedule: 6,
-    curFrequency: 6
+    acePrior: "asc",
+    curSchedule: 5,
+    curFrequency: 5
   },
   rowDatas: ALL_DATA
 };

@@ -3,35 +3,39 @@ import PropTypes from "prop-types";
 
 class Schedule extends Component {
   getScheduleFirstLineItems() {
-    const firstLineItems = this.props.schedule.firstLineItems.map(
-      (item, index) => {
-        return (
-          <span
-            className="schedule-item"
-            style={{ paddingLeft: item.position + "px" }}
-          >
-            <div className="icon"><span className={item.eventType}></span></div>
-          </span>
-        );
-      }
-    );
+    const firstLineItems = this.props.schedule[
+      this.props.curSchedule
+    ].firstLineItems.map((item, index) => {
+      return (
+        <span
+          className="schedule-item"
+          style={{ paddingLeft: item.position + "px" }}
+        >
+          <div className="icon">
+            <span className={item.eventType}></span>
+          </div>
+        </span>
+      );
+    });
 
     return firstLineItems;
   }
 
   getScheduleSecondLineItems() {
-    const secondLineItems = this.props.schedule.secondLineItems.map(
-      (item, index) => {
-        return (
-          <span
-            className="schedule-item"
-            style={{ paddingLeft: item.position + "px" }}
-          >
-            <div className="icon"><span className={item.eventType}></span></div>
-          </span>
-        );
-      }
-    );
+    const secondLineItems = this.props.schedule[
+      this.props.curSchedule
+    ].secondLineItems.map((item, index) => {
+      return (
+        <span
+          className="schedule-item"
+          style={{ paddingLeft: item.position + "px" }}
+        >
+          <div className="icon">
+            <span className={item.eventType}></span>
+          </div>
+        </span>
+      );
+    });
 
     return secondLineItems;
   }
@@ -52,7 +56,8 @@ class Schedule extends Component {
 }
 
 Schedule.propTypes = {
-  schedule: PropTypes.object
+  schedule: PropTypes.object,
+  curSchedule: PropTypes.number.isRequired
 };
 
 export default Schedule;
