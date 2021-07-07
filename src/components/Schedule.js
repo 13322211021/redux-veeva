@@ -10,7 +10,7 @@ class Schedule extends Component {
             className="schedule-item"
             style={{ paddingLeft: item.position + "px" }}
           >
-            <div className="icon"></div>
+            <div className="icon"><span className={item.eventType}></span></div>
           </span>
         );
       }
@@ -27,7 +27,7 @@ class Schedule extends Component {
             className="schedule-item"
             style={{ paddingLeft: item.position + "px" }}
           >
-            <div className={"icon " + item.eventType}></div>
+            <div className="icon"><span className={item.eventType}></span></div>
           </span>
         );
       }

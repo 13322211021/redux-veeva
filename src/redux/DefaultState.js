@@ -1,4 +1,4 @@
-import ALL_DATA from './../components/mock/ALL_DATA';
+import ALL_DATA from './../mock/ALL_DATA';
 
 const defaultState = {
   topSettings: {

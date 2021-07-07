@@ -1,5 +1,5 @@
 import { fromJS } from 'immutable';
-import ALL_DATA from './../components/mock/ALL_DATA';
+import ALL_DATA from './../mock/ALL_DATA';
 import defaultState from './DefaultState'
 
 const reducer = (state, action) => {

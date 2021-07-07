@@ -1,3 +1,66 @@
 .schedule-component {
-  padding-top: 120px;
+  padding-top: 155px;
+
+  .schedule-first-line, .schedule-second-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .schedule-first-line {
+
+    .icon {
+      background-color: #72D9A4;
+    }
+  }
+
+  .schedule-second-line {
+
+    padding-top: 20px;
+    
+    .icon {
+      background-color: #AB91EE;
+    }
+  }
+
+  .schedule-item {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+
+    .icon {
+      align-items: center;
+      border-radius: 50%;
+      display: flex;
+      height: 32px;
+      justify-content: center;
+      width: 32px;
+
+      span {
+        height: 24px;
+        width: 24px;
+        background-size: 24px 24px;
+      }
+
+      .meeting {
+        background-image: url(../../icon/meeting.svg);
+      }
+      .remote {
+        background-image: url(../../icon/remote.svg);
+      }
+      .telephone {
+        background-image: url(../../icon/telephone.svg);
+      }
+      .mail {
+        background-image: url(../../icon/mail.svg);
+      }
+      .note {
+        background-image: url(../../icon/note.svg);
+      }
+      .email {
+        background-image: url(../../icon/email.svg);
+      }
+    }
+  }
 }
