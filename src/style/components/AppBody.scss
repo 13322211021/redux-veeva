@@ -1,4 +1,4 @@
-@import './hcp.scss';
+@import './HCP.scss';
 @import './Schedule.scss';
 @import './Frequency.scss';
 
@@ -21,6 +21,7 @@
       width: 100%;
     }
     .grid-actions-header-row {
+      background-color: #F3F4F6;
       color: #2F7CF6;
       display: flex;
       flex-direction: row;
@@ -80,7 +81,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 10px;
         width: 100%;
 
         .appointmentType {
@@ -154,7 +154,7 @@
     .grid-data-row {
       display: flex;
       flex-direction: row;
-      height: 268px;
+      height: 180px;
 
       .grid-data-cell {
         border-bottom: 1px #B2B2B2 solid;

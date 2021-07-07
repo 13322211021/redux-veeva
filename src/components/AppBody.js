@@ -84,9 +84,9 @@ class AppBody extends Component {
             </div>
             <div className="header column3">
               <div className="action-content">
-                <div className="prev">{"<"}</div>
-                <div className="month-text">June 2021</div>
-                <div className="next">{">"}</div>
+                <div className="prev" onClick={this.props.onFrequencyChange.bind(this, "prev")}>{"<"}</div>
+                <div className="month-text"> {Common.DATE_TEXT[this.props.curFrequency]}</div>
+                <div className="next" onClick={this.props.onFrequencyChange.bind(this, "next")}>{">"}</div>
               </div>
             </div>
           </div>

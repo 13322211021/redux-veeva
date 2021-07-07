@@ -27,7 +27,7 @@ class Frequency extends Component {
       (item, index) => {
         return (
           <span className="frequency-cell" key={index}>
-            <span className="frequency-cell-content">{item}</span>
+            <span className="frequency-cell-content todo-figure">{item}</span>
           </span>
         );
       }
@@ -35,7 +35,7 @@ class Frequency extends Component {
     return (
       <div className="frequency-row todo-row">
         <span className="frequency-cell">
-          <span className="frequency-cell-content">todo</span>
+          <span className="frequency-cell-content">ToDo</span>
         </span>
         {figuresDom}
       </div>
@@ -55,7 +55,7 @@ class Frequency extends Component {
     return (
       <div className="frequency-row calandar-row">
         <span className="frequency-cell">
-          <span className="frequency-cell-content">calandar</span>
+          <span className="frequency-cell-content"></span>
         </span>
         {figuresDom}
       </div>
@@ -75,7 +75,7 @@ class Frequency extends Component {
     return (
       <div className="frequency-row done-row">
         <span className="frequency-cell">
-          <span className="frequency-cell-content">done</span>
+          <span className="frequency-cell-content"></span>
         </span>
         {figuresDom}
       </div>

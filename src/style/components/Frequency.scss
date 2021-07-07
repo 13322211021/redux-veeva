@@ -1,36 +1,79 @@
 .frequency-component {
+  background-color: #F9FFFD;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
   
   .frequency-row {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
     width: 100%;
 
     .frequency-cell {
       display: flex;
+      font-weight: bolder;
       justify-content: center;
       width: 14.2857%;
 
       .frequency-cell-content {
         align-items: center;
-        font-size: 0.5em;
-        font-weight: bold;
       }
+    }
+
+    .frequency-cell:first-child {
+      font-size: 0.5em;
+      font-weight: 800;
     }
   }
 
   .target-row {
 
     .frequency-cell-content {
-      color: black;
+      color: #595454;
     }
   }
 
   .todo-row {
 
     .frequency-cell-content {
-      color: blue;
+      color: #2E7CF6;
+    }
+
+    .todo-figure {
+      background-color: #D0E5FB;
+      border-radius: 50%;
+      height: 42px;
+      line-height: 42px;
+      text-align: center;
+      width: 42px;
+    }
+  }
+
+  .calandar-row {
+    
+    .frequency-cell-content {
+      color: #71D9A3;
+    }
+    
+    .frequency-cell:first-child >span {
+      background-image: url(../../icon/calandar.svg);
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .done-row {
+    
+    .frequency-cell-content {
+      color: #B2B2B2;
+    }
+    
+    .frequency-cell:first-child >span {
+      background-image: url(../../icon/done.svg);
+      height: 30px;
+      width: 30px;
     }
   }
 }
