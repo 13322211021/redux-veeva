@@ -1,0 +1,36 @@
+.frequency-component {
+  
+  .frequency-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+
+    .frequency-cell {
+      display: flex;
+      justify-content: center;
+      width: 14.2857%;
+
+      .frequency-cell-content {
+        align-items: center;
+        font-size: 0.5em;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .target-row {
+
+    .frequency-cell-content {
+      color: black;
+    }
+  }
+
+  .todo-row {
+
+    .frequency-cell-content {
+      color: blue;
+    }
+  }
+}

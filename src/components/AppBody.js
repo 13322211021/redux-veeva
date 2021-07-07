@@ -20,7 +20,10 @@ class AppBody extends Component {
             />
           </div>
           <div className="grid-data-row-frequency-cell column3 grid-data-cell">
-            <Frequency frequency={data.frequency} />
+            <Frequency
+              curFrequency={this.props.curFrequency}
+              frequency={data.frequency}
+            />
           </div>
         </div>
       );

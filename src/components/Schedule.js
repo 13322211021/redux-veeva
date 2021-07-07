@@ -10,6 +10,7 @@ class Schedule extends Component {
         <span
           className="schedule-item"
           style={{ paddingLeft: item.position + "px" }}
+          key={index}
         >
           <div className="icon">
             <span className={item.eventType}></span>
@@ -29,6 +30,7 @@ class Schedule extends Component {
         <span
           className="schedule-item"
           style={{ paddingLeft: item.position + "px" }}
+          key={index}
         >
           <div className="icon">
             <span className={item.eventType}></span>
@@ -56,7 +58,7 @@ class Schedule extends Component {
 }
 
 Schedule.propTypes = {
-  schedule: PropTypes.object,
+  schedule: PropTypes.array,
   curSchedule: PropTypes.number.isRequired
 };
 
